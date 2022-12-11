@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Orbitron";
+  src: url("../assets/fonts/Orbitron-VariableFont_wght.ttf")
+  format("truetype");
+}
+
+body {
+  background-image: url("../assets/stars.jpg");
+  overflow: hidden;
+}
+
+* {
+  font-family: "Orbitron", sans-serif;
+}

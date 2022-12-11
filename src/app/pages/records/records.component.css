@@ -1,0 +1,27 @@
+#records-title {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  font-weight: bold;
+  color: yellow;
+}
+
+#records-table {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  color: yellow;
+  border: 1px solid yellow;
+  margin-top: 20px;
+  width: fit-content;
+  min-width: 40%;
+}
+
+#table-index {
+  font-size: 20px;
+  font-weight: bold;
+}
