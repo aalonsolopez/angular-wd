@@ -9,6 +9,8 @@ import { MainPageComponent } from './pages/main-page/main-page.component';
 import { PreferencesComponent } from './pages/preferences/preferences.component';
 import { RecordsComponent } from './pages/records/records.component';
 import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { GameComponent } from './pages/game/game.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { LoginComponent } from './pages/login/login.component';
     MainPageComponent,
     PreferencesComponent,
     RecordsComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent,
+    GameComponent
   ],
   imports: [
     BrowserModule,
