@@ -11,6 +11,7 @@ import { RecordsComponent } from './pages/records/records.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { GameComponent } from './pages/game/game.component';
+import { EnemyComponent } from './pages/game/enemy/enemy.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { GameComponent } from './pages/game/game.component';
     RecordsComponent,
     LoginComponent,
     RegisterComponent,
-    GameComponent
+    GameComponent,
+    EnemyComponent
   ],
   imports: [
     BrowserModule,
