@@ -5,6 +5,7 @@
   <div class="form-floating">
     <input
       type="number"
+      [(ngModel)]="numberOfUFO"
       class="form-control"
       id="ufos-input"
       placeholder="1"
@@ -14,11 +15,12 @@
   <div class="form-floating">
     <input
       type="number"
+      [(ngModel)]="totalTime"
       class="form-control"
       id="time-input"
       placeholder="60"
     />
     <label for="time-input">Game time</label>
   </div>
-  <button type="button" class="btn btn-primary" id="preferences-button">Set Preferences</button>
+  <button type="button" (click)="saveData()" class="btn btn-primary" id="preferences-button">Set Preferences</button>
 </div>
