@@ -1,4 +1,12 @@
+@font-face {
+  font-family: "Orbitron";
+  src: url("../../../assets/fonts/Orbitron-VariableFont_wght.ttf")
+  format("truetype");
+}
 
+* {
+  font-family: "Orbitron", sans-serif;
+}
 
 #game-main-screen {
   font-size: 20px;

@@ -7,20 +7,24 @@
   <div class="form-floating">
     <input
       type="username"
+      [(ngModel)]="username"
       class="form-control"
       id="username-input"
       placeholder="username"
+      required="required"
     />
     <label for="username-input">Username</label>
   </div>
   <div class="form-floating">
     <input
       type="password"
+      [(ngModel)]="password"
       class="form-control"
       id="password-input"
       placeholder="Password"
+      required="required"
     />
     <label for="password-input" class="form-label">Password</label>
   </div>
-  <button type="button" class="btn btn-primary" id="submit-button">Login</button>
+  <button (click)="login()" type="button" class="btn btn-primary" id="submit-button">Login</button>
 </div>

@@ -4,11 +4,11 @@
   format("truetype");
 }
 
+* {
+  font-family: "Orbitron", sans-serif;
+}
+
 body {
   background-image: url("../assets/stars.jpg");
   overflow: hidden;
-}
-
-* {
-  font-family: "Orbitron", sans-serif;
 }

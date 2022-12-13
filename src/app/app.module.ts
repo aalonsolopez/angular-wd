@@ -11,7 +11,7 @@ import { RecordsComponent } from './pages/records/records.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { GameComponent } from './pages/game/game.component';
-import { EnemyComponent } from './pages/game/enemy/enemy.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -22,13 +22,13 @@ import { EnemyComponent } from './pages/game/enemy/enemy.component';
     RecordsComponent,
     LoginComponent,
     RegisterComponent,
-    GameComponent,
-    EnemyComponent
+    GameComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -12,20 +12,25 @@
     </a>
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
-        <a class="nav-link active" href="../../../index.html">🏠Home</a>
+        <a class="nav-link active" routerLink="/home">🏠Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="preferences.html">⚙️Preferences</a>
+        <a class="nav-link active" routerLink="/preferences">⚙️Preferences</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="game.html">🕹Play</a>
+        <a class="nav-link active" routerLink="/game">🕹Play</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="records.html">🏆Records</a>
+        <a class="nav-link active" routerLink="/records">🏆Records</a>
       </li>
       <li class="d-flex" id="logreg">
-        <a class="nav-link active" href="register.html">👤Register</a>
-        <a class="nav-link active" href="login.html">👋Login</a>
+        <a class="nav-link active" routerLink="/register">👤Register</a>
+        <div *ngIf="isLogged; else login">
+          <a class="nav-link active">👋Logoff</a>
+        </div>
+        <ng-template #login>
+          <a class="nav-link active" routerLink="/login">👋Login</a>
+        </ng-template>
       </li>
     </ul>
   </div>
