@@ -2,17 +2,45 @@
 <body>
 <div id="records">
   <h1 id="records-title">Records</h1>
-  <table class="table" id="records-table">
-    <thead>
-    <tr id="table-index">
-      <th scope="col">#</th>
-      <th scope="col">User</th>
-      <th scope="col">Points</th>
-      <th scope="col">UFOs</th>
-      <th scope="col">Seconds</th>
-      <th scope="col">Date</th>
-    </tr>
-    </thead>
-  </table>
+  <div>
+    <table class="records-table">
+      <thead>
+      <tr class="table-index">
+        <th scope="col">#</th>
+        <th scope="col">User</th>
+        <th scope="col">Points</th>
+        <th scope="col">UFOs</th>
+        <th scope="col">Seconds</th>
+        <th scope="col">Date</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let record of records; let i = index">
+        <th scope="row">{{i + 1}}</th>
+        <td>{{record.username}}</td>
+        <td>{{record.punctuation}}</td>
+        <td>{{record.ufos}}</td>
+        <td>{{record.disposedTime}}</td>
+        <td>{{record.recordDate}}</td>
+    </table>
+    <table class="records-table-personal" *ngIf="isLoggedIn">
+      <thead>
+      <tr class="table-index">
+        <th scope="col">#</th>
+        <th scope="col">User</th>
+        <th scope="col">Points</th>
+        <th scope="col">UFOs</th>
+        <th scope="col">Seconds</th>
+        <th scope="col">Date</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let recordP of personalRecords; let i = index">
+        <th scope="row">{{i + 1}}</th>
+        <td>{{recordP.username}}</td>
+        <td>{{recordP.punctuation}}</td>
+        <td>{{recordP.ufos}}</td>
+        <td>{{recordP.disposedTime}}</td>
+        <td>{{recordP.recordDate}}</td>
+    </table>
+  </div>
 </div>
 </body>

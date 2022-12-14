@@ -5,6 +5,7 @@
   <div class="form-floating">
     <input
       type="username"
+      [(ngModel)]="username"
       class="form-control"
       id="username-input"
       placeholder="username"
@@ -14,6 +15,7 @@
   <div class="form-floating">
     <input
       type="email"
+      [(ngModel)]="email"
       class="form-control"
       id="email-input"
       placeholder="example@example.com"
@@ -23,11 +25,12 @@
   <div class="form-floating">
     <input
       type="password"
+      [(ngModel)]="password"
       class="form-control"
       id="password-input"
       placeholder="Password"
     />
     <label for="password-input" class="form-label">Password</label>
   </div>
-  <button type="button" class="btn btn-primary" id="register-button">Login</button>
+  <button type="button" (click)="register()" class="btn btn-primary" id="register-button">Login</button>
 </div>

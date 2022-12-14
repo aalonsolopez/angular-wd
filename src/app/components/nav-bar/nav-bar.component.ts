@@ -6,8 +6,14 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit{
-  isLogged: boolean = true;
+  isLogged: boolean = localStorage.getItem('token') !== null;
   ngOnInit()  {
+  }
+
+  logoff() {
+    localStorage.removeItem('token');
+    localStorage.removeItem('username');
+    window.location.reload();
   }
   constructor() {
   }

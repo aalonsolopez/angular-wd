@@ -11,7 +11,8 @@ import { RecordsComponent } from './pages/records/records.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { GameComponent } from './pages/game/game.component';
-import {FormsModule} from "@angular/forms";
+import { FormsModule } from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import {FormsModule} from "@angular/forms";
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     NgbModule,
     FormsModule

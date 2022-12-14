@@ -91,6 +91,7 @@
             ],
             "styles": [
               "src/styles.css"
+              "src/pages/game/game.js"
             ],
             "scripts": [
             ]

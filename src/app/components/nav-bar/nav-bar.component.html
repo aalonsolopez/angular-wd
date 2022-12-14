@@ -26,7 +26,7 @@
       <li class="d-flex" id="logreg">
         <a class="nav-link active" routerLink="/register">👤Register</a>
         <div *ngIf="isLogged; else login">
-          <a class="nav-link active">👋Logoff</a>
+          <a class="nav-link active" (click)="logoff()">👋Logoff</a>
         </div>
         <ng-template #login>
           <a class="nav-link active" routerLink="/login">👋Login</a>

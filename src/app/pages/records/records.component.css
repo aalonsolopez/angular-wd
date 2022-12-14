@@ -8,6 +8,13 @@
   font-family: "Orbitron", sans-serif;
 }
 
+#tables {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #records-title {
   position: absolute;
   top: 20%;
@@ -18,10 +25,10 @@
   color: yellow;
 }
 
-#records-table {
+.records-table {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 25%;
   transform: translate(-50%, -50%);
   width: 50%;
   color: yellow;
@@ -31,7 +38,20 @@
   min-width: 40%;
 }
 
-#table-index {
+.records-table-personal {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  color: yellow;
+  border: 1px solid yellow;
+  margin-top: 20px;
+  width: fit-content;
+  min-width: 40%;
+}
+
+.table-index {
   font-size: 20px;
   font-weight: bold;
 }

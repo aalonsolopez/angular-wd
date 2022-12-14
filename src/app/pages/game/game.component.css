@@ -16,6 +16,9 @@ html, body {
 canvas {
   background-color: aqua;
   margin-top: 50px;
+  margin-left: 100px;
+  display: flex;
+  border: 10px solid gold;
 }
 
 body {
@@ -27,4 +30,51 @@ body {
 
   /* This centers our sketch vertically. */
   align-items: center;
+}
+
+#missile {
+  position: absolute;
+  left: 300px;
+  bottom: 10px;
+  height: 70px;
+  width: 40px;
+  z-index: 10;
+}
+
+#ufo {
+  position: absolute;
+  left: 0px;
+  width: 80px;
+  height: 80px;
+  bottom: 550px;
+}
+
+#points {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  width: 150px;
+  height: 50px;
+  background-color: yellow;
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+  z-index: 0;
+}
+
+#time {
+  position: absolute;
+  bottom: 10px;
+  right: 200px;
+  width: 150px;
+  height: 50px;
+  background-color: yellow;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+  z-index: 0;
 }
